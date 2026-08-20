@@ -28,6 +28,7 @@ int main() {        // Main Function
 // ; -> Statement Terminator
 // g++ 1_code.cpp ---------> Compile file.
 // ./a.exe ----------------> Run code.
+
 /*
 code.cpp ------> Compiler -------> code.exe ---------> "Hello" (Output)
 (Source code)                     (Executable code)
