@@ -28,6 +28,8 @@ int main() {        // Main Function
 // ; -> Statement Terminator
 // g++ 1_code.cpp ---------> Compile file.
 // ./a.exe ----------------> Run code.
+// One Run Command: g++ 1_code.cpp && ./a.exe
+//                  g++ 1_code.cpp ; ./a.exe
 
 /*
 code.cpp ------> Compiler -------> code.exe ---------> "Hello" (Output)
