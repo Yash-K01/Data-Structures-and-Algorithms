@@ -25,6 +25,7 @@ int main() {        // Main Function
     return 0;      // Last Point
 }
 
+// C++ is a Case Sensitive Programming Language.
 // ; -> Statement Terminator
 // g++ 1_code.cpp ---------> Compile file.
 // ./a.exe ----------------> Run code.
