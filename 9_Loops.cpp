@@ -146,6 +146,16 @@ int main(){
         cout<< "Num is NOT Prime."<< endl;
     }
 
+    /*
+    Optimized solution to check prime number:
+    Let, 12 factors 1 x 12   sqrt(n) * sqrt(n) = n
+                    2 x 6    sqrt(n) -> sqrt(12) = 3._
+                   _3 x 4_   3^2 = 9 & 4^2 = 16 and 12 lies between 9 & 16.
+                    4 x 3    So we will just check till 3 to get prime or not for 4 & 6 its already checked.
+                    6 x 2
+                    12 x 1
+    */
+
     return 0;
 }
 
@@ -166,4 +176,37 @@ Iterator: Loops variable is called iterator.
 3. do-while Loop: In this loop 'once work' always done and then checks the condition.
 4. break: Used to terminate loop or stop the loop and get out.
 5. continue: Skip an iteration and continue next part.
+
+OUTPUT:
+PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ 9_Loops.cpp ; ./a.exe
+1 2 3 4 5 
+Last value of Num: 6
+Enter your n:5
+1 2 3 4 5 
+Sum: 15
+Sum using FORMULA n(n+1)/2: 15
+WHILE LOOP
+1 2 3 4 5 
+Square Pattern.
+****
+****
+****
+****
+5 4 3 2 1 
+Sum of 1 0 8 2 9 is:10
+Reverse the Give number.
+Reverse: 92801
+Do While Loop.
+1 2 3 4 5 6 7 8 9 10  Out of loop.
+User keep entering numbers till enter multiple of 10.
+Enter number: 5
+You entered: 5
+Enter number: 50
+You enter multiple of 10 & loop terminated: 50
+1
+2
+4
+5
+Prime Numbers.
+Num is Prime.
 */
