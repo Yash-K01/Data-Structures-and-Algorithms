@@ -26,6 +26,41 @@ int main(){
         cout<< endl;                   //  4        4-4+1 = 1   *
     }
 
+    cout<< "Half Pyramid Pattern"<< endl;
+    for(int i=1; i<=n; i++){          // j<=i     "j"
+        for(int j=1; j<=i; j++){      //  1        1
+            cout<< j<< " ";                 //  12       12
+        }                             //  123      123
+        cout<< endl;                  // ....So on
+    }
+
+    cout<< "Character Pyramid Pattern"<< endl;
+    char ch = 'A';                 // j<=i     ch++
+    for(int i=1; i<=n; i++){       //  1       A
+        for(int j=1; j<=i; j++){   //  2       BC
+            cout<< ch++<< " ";           //  3       DEF
+        }                          //  4       GHIJ
+        cout<< endl;
+    }
+
+    char y = 'A';              // y++ -> y=y+1 ->  ->  -> 
+    for(int i=0; i<=25; i++){  // ch(y) = ch(y) + int(1)
+        cout<< y++<< " ";            // ch(y) = 65 + 1
+    }                          // ch(y) = 66 ---> 'B'
+
+    cout<< "Hollow Rectangle Pattern."<< endl;
+    for(int i=1; i<=n; i++){ 
+        cout << "*";                 //  n = 4
+        for(int j=1; j<=n-1; j++){   //  *****  i=1(*) + i==1   -> j<=n-1(***) + i=1(*)
+            if(i==1 || i==n){        //  *   *  i=2(*) + i!=1,n -> j<=n-1(   ) + i=2(*)
+                cout << "*";         //  *   *  i=3(*) + i!=1,n -> j<=n-1(   ) + i=3(*)
+            } else{                  //  *****  i=4(*) + i==n   -> j<=n-1(***) + i=4(*)
+                cout << " ";
+            }     
+        } 
+        cout<< "*" << endl;
+    }
+
     return 0;
 }
 
