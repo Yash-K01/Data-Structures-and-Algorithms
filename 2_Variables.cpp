@@ -5,6 +5,7 @@ int main(){
     // 2 * (a + b) --> 2 is literal a,b is variables
     // Identifier --> variable, functions, objects, classes
     // Always give Meaningful names to identifier.
+    // The variable assigned OUT of loops, classes, functions has GLOBAL SCOPE and Inside them has LOCAL SCOPE.
 
     int a = 10;
     // 'int' is Type, 'a' is variable, '=' is assignment operator & '10' is value.
