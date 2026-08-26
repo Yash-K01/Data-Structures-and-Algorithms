@@ -61,6 +61,48 @@ int main(){
         cout<< "*" << endl;
     }
 
+    cout<< "Inverted and Rotated Half-Pyramid Pattern."<< endl;
+    /*
+    In pattern       *   After space we never    Here, 3 space + 1 star
+    Before space    **   need to print.                2 space + 2 star
+    we need to     ***                                 1 space + 3 star
+    print.        ****                                 0 space + 4 star
+                                           We need: InnerLoop1 + InnerLoop2
+    */
+    for(int i=1; i<=n; i++){       // Outer Loop
+        for(int j=1; j<=n-i; j++){ // Inner Spaces Loop
+            cout<< " ";
+        }
+        for(int k=1; k<=i; k++){   // Inner Stars Loop
+            cout<< "*";
+        }
+        cout<< endl;
+    }
+
+    cout<< "Floyd's Triangle Pattern."<< endl;
+    int num = 1;                    // 1
+    for(int i=1; i<=n; i++){        // 2 3
+        for(int j=1; j<=i; j++){    // 4 5 6
+            cout<< num++ << " ";    // 7 8 9 10
+        }
+        cout<< endl;
+    }
+
+    cout<< "Diamond Pattern." << endl;
+    /*
+           *       R1 -> 3sp + 1st
+          ***      R1 -> 3sp + 1st
+         *****     R1 -> 3sp + 1st
+        *******    R1 -> 3sp + 1st
+        *******    
+         *****
+          ***
+           *
+    */
+    for(int i=1; i<=n; i++){
+
+    }
+
     return 0;
 }
 
