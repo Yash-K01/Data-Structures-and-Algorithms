@@ -94,10 +94,10 @@ int main(){
           ***   OL: 1 to n    R2 -> 2sp + 3st  InnerLoop2 (1 to 2*i-1) cout<<"*"
          *****                R3 -> 1sp + 5st  Generally in Patterns when odd numbers is to print then,
         *******               R4 -> 0sp + 7st     2*i-1 or 2*i+1 Like this formula comes out.
-        *******   2nd Pyramid   R1 -> 0sp + 7st  InnerLoop1 (1 to n-i) cout<<" "
-         *****    OL: n to 1    R2 -> 1sp + 5st  InnerLoop2 (1 to 2*i-1) cout<<"*"
-          ***                   R3 -> 2sp + 3st
-           *                    R4 -> 3sp + 1st
+        *******   2nd Pyramid   R1 -> 0sp + 7st  
+         *****    OL: n to 1    R2 -> 1sp + 5st
+          ***                   R3 -> 2sp + 3st  InnerLoop2 (1 to 2*i-1) cout<<"*"
+           *                    R4 -> 3sp + 1st  InnerLoop1 (1 to n-i) cout<<" "
     */
     for(int i=1; i<=n; i++){
         for(int j=1; j<=n-i; j++){
