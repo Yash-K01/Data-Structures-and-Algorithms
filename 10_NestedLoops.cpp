@@ -118,6 +118,20 @@ int main(){
         cout<< endl;
     }
 
+    cout<< "Butterfly Pattern." << endl;
+    /*
+    
+    *      *
+    **    **
+    ***  ***
+    ********
+    ********
+    ***  ***
+    **    **
+    *      *
+    
+    */
+
     return 0;
 }
 
