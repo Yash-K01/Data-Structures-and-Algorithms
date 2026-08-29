@@ -29,7 +29,7 @@ int main(){
     cout<< "Half Pyramid Pattern"<< endl;
     for(int i=1; i<=n; i++){          // j<=i     "j"
         for(int j=1; j<=i; j++){      //  1        1
-            cout<< j<< " ";                 //  12       12
+            cout<< j<< " ";           //  12       12
         }                             //  123      123
         cout<< endl;                  // ....So on
     }
@@ -38,14 +38,14 @@ int main(){
     char ch = 'A';                 // j<=i     ch++
     for(int i=1; i<=n; i++){       //  1       A
         for(int j=1; j<=i; j++){   //  2       BC
-            cout<< ch++<< " ";           //  3       DEF
+            cout<< ch++<< " ";     //  3       DEF
         }                          //  4       GHIJ
         cout<< endl;
     }
 
     char y = 'A';              // y++ -> y=y+1 ->  ->  -> 
     for(int i=0; i<=25; i++){  // ch(y) = ch(y) + int(1)
-        cout<< y++<< " ";            // ch(y) = 65 + 1
+        cout<< y++<< " ";      // ch(y) = 65 + 1
     }                          // ch(y) = 66 ---> 'B'
 
     cout<< "Hollow Rectangle Pattern."<< endl;
@@ -120,17 +120,42 @@ int main(){
 
     cout<< "Butterfly Pattern." << endl;
     /*
-    
-    *      *
-    **    **
-    ***  ***
-    ********
-    ********
-    ***  ***
-    **    **
+             // Here when Row number is increasing the Space is reducing so somthing 2*(n-i) Pattern is identifing.
+    *      * // R1: 1st + 6sp + 1st  OL: (1 to  n)
+    **    ** // R2: 2st + 4sp + 2st  IL: a) stars (1 to i) 
+    ***  *** // R3: 3st + 2sp + 3st      b) spaces (1 to 2*(n-i))
+    ******** // R4: 4st + 0sp + 4st      c) stars (1 to i)
+
+    ******** // OL: (n to 1)
+    ***  *** // Here when Row increases the Space is also increasing so the outer loop condition is reverse.
+    **    ** // Now the all inner loops remains same and using 2*(n-i) the half pattern we get.
     *      *
     
     */
+   for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout<< "*";
+        }
+        for(int j=1; j<=2*(n-i); j++){
+            cout<< " ";
+        }
+        for(int j=1; j<=i; j++){
+            cout<< "*";
+        }
+        cout<< endl;
+   }
+   for(int i=n; i>=1; i--){
+        for(int j=1; j<=i; j++){
+            cout<< "*";
+        }
+        for(int j=1; j<=2*(n-i); j++){
+            cout<< " ";
+        }
+        for(int j=1; j<=i; j++){
+            cout<< "*";
+        }
+        cout<< endl;
+   }
 
     return 0;
 }
@@ -144,4 +169,64 @@ int main(){
   R4 4  4  4  4  (4 -> 4 prints)
 2. Inner Loop: It decides to print Number of columns/in each row. What to print in each row Do it in inner loop.
 3. Work in inner loop: Basically work in Each Row.
+
+OUTPUT:
+PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ 10_NestedLoops.cpp ; ./a.exe
+1 1 1 1 
+2 2 2 2 
+3 3 3 3 
+4 4 4 4 
+Star Pattern.
+* 
+* * 
+* * * 
+* * * * 
+Inverted Star Pattern.
+* * * * 
+* * * 
+* * 
+* 
+Half Pyramid Pattern
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+Character Pyramid Pattern
+A 
+B C 
+D E F 
+G H I J 
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Hollow Rectangle Pattern.
+*****
+*   *
+*   *
+*****
+Inverted and Rotated Half-Pyramid Pattern.
+   *
+  **
+ ***
+****
+Floyd's Triangle Pattern.
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+Diamond Pattern.
+   *
+  ***
+ *****
+*******
+*******
+ *****
+  ***
+   *
+Butterfly Pattern.
+*      *
+**    **
+***  ***
+********
+********
+***  ***
+**    **
+*      *
 */
