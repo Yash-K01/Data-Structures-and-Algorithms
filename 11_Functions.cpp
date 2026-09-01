@@ -14,9 +14,16 @@ void assistant(){              // Now, 1. Execution start from main() and main()
 
 void name(); //function (forward) declare: Because the function after main() gives error but is we declare its name before main() than is works.
 
+int sum(int a, int b){ //a,b are parameters
+    int sum = a + b;
+    return sum; //return value
+}
+
 int main(){                    
     assistant(); //function call
     name();
+    int result = sum(10, 20); //2, 4 are arguments
+    cout << "Sum is: " << result << endl;
     return 0;
 }
 
@@ -39,7 +46,29 @@ Functions: Block of code which runs when it is called.
 
 Forward Declaration: Declaration - the function's name, return type and parameters(if any).
                      Definition - the body of the function.
+
                      void sayHello() {      ----> Declaration
                         cout << "Hello \n"; ----> Definition
                      }
+
+Function with Parameters: Function can take input values to work with them. These input values are known as Parameters.
+    returnType fname( type param1, type param2 ...){
+        //do some work                                 a,b --> Function --> sum
+        return someValue;                          (parameters)         (return value)
+    }
+
+    fname(argument1, argument2 ...); //function call with arguments
+
+    int sum(int a, int b=1) { // 'b' parameter has default value 1, if we not pass any value to b then it will take default value 1.
+        return a + b;         // Here the 'a' first parameter cannot have default value because when we call function with argument the 'a' gets
+    }                            value passed in argument but 'b' does not get a value and error occurs.
+                            
+                              // Default value is used when we dont pass any argument to that parameter. If we pass value then that value is used in that parameter.
+OUTPUT:
+PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ 11_Functions.cpp ; ./a.exe
+Hello World...! 
+work done. 
+Sai 
+Sum is: 30
+
 */
