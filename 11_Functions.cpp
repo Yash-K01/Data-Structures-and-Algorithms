@@ -9,10 +9,10 @@ void assistant(){              // Now, 1. Execution start from main() and main()
     hello();                   // 2. assistant() call hello().
     cout<< "work done. \n";    // 3. hello() works and print "Hello World...!" on screen and complete go back where it called.
 }                              // 4. hello() called at assistant() and that line done now assistant() works and print "work done." on screen and complete go back where it called.
-                               // 5. In main() the assistant() lines work is complete and main() next line is return 0 that means program execution complete.
+                               // 5. In main() the assistant() line work is complete and main() next line is return 0 that means program execution complete.
                                // This is how the function called and compete working and return value. Function also called in other FUNCTION.
 
-void name(); //function (forward) declare: Because the function after main() gives error but is we declare its name before main() than is works.
+void name(); //function (forward) declare: Because the function after main() gives error but if we declare its name before main() than is works.
 
 int sum(int a, int b){ //a,b are parameters
     int sum = a + b;
@@ -63,7 +63,7 @@ Function with Parameters: Function can take input values to work with them. Thes
         return a + b;         // Here the 'a' first parameter cannot have default value because when we call function with argument the 'a' gets
     }                            value passed in argument but 'b' does not get a value and error occurs.
                             
-                              // Default value is used when we dont pass any argument to that parameter. If we pass value then that value is used in that parameter.
+                              // Default value is used when we dont pass any argument to that parameter. If we pass value then passed value is used in that parameter.
 OUTPUT:
 PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ 11_Functions.cpp ; ./a.exe
 Hello World...! 
