@@ -18,6 +18,7 @@ bool isEven(int n){
 int main(){
     cout << prod(10, 20) << endl;
     cout << isEven(20) << endl;
+    cout << isEven(19) << endl;
     return 0;
 }
 
@@ -26,4 +27,5 @@ OUTPUT:
 PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ Ass4.cpp ; ./a.exe        
 200
 1
+0
 */
