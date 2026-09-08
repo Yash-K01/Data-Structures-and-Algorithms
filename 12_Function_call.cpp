@@ -12,7 +12,10 @@ int main(){
     return 0;
 }
 
-// OUTPUT: 7
+/* OUTPUT:
+PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ 12_Function_call.cpp ; ./a.exe 
+7
+*/
 
 /* 
 Two Memory Types:
