@@ -25,11 +25,26 @@ int fact(int n){
     return f;
 }
 
+// Function to print a number is prime or not.
+bool isPrime(int n){
+    if(n == 1){
+        return false;
+    }
+
+    for(int i=2; i*i<=n; i++){ // One more logic i<=n-1.
+        if(n % i == 0){
+            return false;
+        }
+    }
+    return true;
+}
+
 int main(){
     cout << prod(10, 20) << endl;
     cout << isEven(20) << endl;
     cout << isEven(19) << endl;
     fact(5);
+    cout << isPrime(22) << endl;
     return 0;
 }
 
@@ -40,4 +55,5 @@ PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ Ass4.cpp ; ./a.exe
 1
 0
 Factorial(5) = 120
+0
 */
