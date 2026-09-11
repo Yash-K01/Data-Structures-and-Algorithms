@@ -42,7 +42,7 @@ bool isPrime(int n){
 // Function to find binomial coefficient for given n & r.
 int factorial(int n){
     int fact = 1;              // n       n!      Suppose we have 4 subject from that choice is of 2.
-    for(int i=1; i<=n; i++){   //  C = -------    Posible combinations are: (1,2) (1,3) (1,4) (2,3) (2,4) (3,4) => 6
+    for(int i=1; i<=n; i++){   //  C = -------    Posible combinations are: (1,2) (1,3) (1,4) (2,3) (2,4) (3,4) => 6 
         fact *= i;             //   r  r!(n-r)!   So calculating manually it  takes time so we use this formula.
     }
     return fact;               // 4        4!           24
@@ -76,4 +76,5 @@ PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ Ass4.cpp ; ./a.exe
 Factorial(5) = 120
 0
 6
+
 */
