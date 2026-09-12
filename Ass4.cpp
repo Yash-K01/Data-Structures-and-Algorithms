@@ -83,6 +83,41 @@ bool isPalindrome(int num){
     return num == revNum;
 }
 
+// Function to calculate Sum of digits of number.
+int digSum(int n){
+    int res = 0;
+    while(n > 0){
+        res += n % 10;
+        n = n/10;
+    }
+    return res;
+}
+
+// Function to calculate a^2 + b^2 + 2*ab.
+int abSquare(int a, int b){
+    return a*a + b*b + 2*a*b;
+}
+
+// Function to print largest of 3 numbers.
+int largest(int a, int b, int c){
+    if(a >= b && a >= c){
+        return a;
+    } else if(b >= c){
+        return b;
+    } else{
+        return c;
+    }
+}
+
+// Function to get character as parameter and return next english alphabet occurs.
+char getNextChar(char ch){
+    if(ch == 'z'){
+        return 'a';
+    } else{
+        return ch + 1;
+    }
+}
+
 int main(){
     cout << prod(10, 20) << endl;
     cout << isEven(20) << endl;
@@ -92,6 +127,10 @@ int main(){
     cout << binCoeff(4, 2) << endl;
     prime(50);
     cout << isPalindrome(121) << endl;
+    cout << digSum(55) << endl;
+    cout << abSquare(2, 4) << endl;
+    cout << largest(10, 20, 5) << endl;
+    cout << getNextChar('c') << endl;
     return 0;
 }
 
@@ -106,5 +145,8 @@ Factorial(5) = 120
 6
 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 
 1
-
+10
+36
+20
+d
 */
