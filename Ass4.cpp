@@ -57,6 +57,32 @@ int binCoeff(int n, int r){
     return result;
 }
 
+// Function to print a all Primes in a range from 2 to n.
+int prime(int n){
+    for(int i=2; i<=n; i++){
+        if(isPrime(i)){
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+}
+
+// Function to check Palindrome number.
+int reverse(int n){
+    int res = 0;
+    while(n > 0){
+        int lastDig = n % 10;
+        res = res * 10 + lastDig;
+        n = n/10;
+    }
+    return res;
+}
+
+bool isPalindrome(int num){
+    int revNum = reverse(num);
+    return num == revNum;
+}
+
 int main(){
     cout << prod(10, 20) << endl;
     cout << isEven(20) << endl;
@@ -64,6 +90,8 @@ int main(){
     fact(5);
     cout << isPrime(22) << endl;
     cout << binCoeff(4, 2) << endl;
+    prime(50);
+    cout << isPalindrome(121) << endl;
     return 0;
 }
 
@@ -76,5 +104,7 @@ PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ Ass4.cpp ; ./a.exe
 Factorial(5) = 120
 0
 6
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 
+1
 
 */
