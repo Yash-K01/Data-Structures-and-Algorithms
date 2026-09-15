@@ -15,12 +15,28 @@ void binToDec(int binNum){
     cout << decNum << endl;
 }
 
+// Function to convert Decimal to Binary.
+void decToBin(int decNum){
+    int n = decNum;               // n = 4       rem = n % 2         binNum = binNum + rem * pow        n = n/2       pow = pow * 10
+    int pow = 1;                  // 4 > 0        4 % 2 = 0               0 + (0 * 1) = 0               4/2 = 2        1 * 10 = 10
+    int binNum = 0;               // 2 > 0        2 % 2 = 0               0 + (0 * 10) = 0              2/2 = 1        10 * 10 = 100
+    while(n > 0){                 // 1 > 0        1 % 2 = 1               0 + (1 * 100) = 100           1/2 = 0        100 * 10 = 1000
+        int rem = n % 2;          // 0 > 0 ...NO  binNum = 100
+        binNum += rem * pow;
+        n = n/2;
+        pow = pow * 10;
+    }
+    cout << binNum << endl;
+}
+
 int main(){
     cout << sizeof(int) << endl;
     cout << sizeof(long double) << endl;
     cout << sizeof(short int) << endl;
     cout << "Decimal Number is: ";
     binToDec(10000);
+    cout << "Binary Number is: ";
+    decToBin(4);
     return 0;
 }
 
@@ -31,6 +47,7 @@ PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ 15_Binary_Num_System.cpp ; ./a.ex
 12
 2
 Decimal Number is: 16
+Binary Number is: 100
 */
 
 /*
@@ -111,4 +128,14 @@ MSB: First Bit in any Data Type is MSB -> (Most Significant Bit).
 
 6. We can combine two different modifiers like, 'unsigned short int age;'
 
+Q: Following are the rules of adding 2 binary digits :
+0 + 0 = 0, carry = 0
+1 + 0 = 1, carry = 0
+0 + 1 = 1, carry = 0
+1 + 1 = 0, carry = 1
+So, in math if 2 + 3 = 5, in binary it looks like
+  1 0
++ 1 1
+1 0 1
+Using this method, try to add these 2 numbers (63 & 22).
 */
