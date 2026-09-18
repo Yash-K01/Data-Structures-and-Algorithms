@@ -10,12 +10,15 @@ int main(){
     float pi = 3.14;
     float* ptr2 = &pi;
 
+    int *ptr0 = NULL;
+
     cout << &a << " = " << ptr << endl;
     cout << &pi << " = " << ptr2 << endl;
     cout <<"Pointer of Pointer: ";
     cout << &ptr << " = " << pptr << endl;
     cout << "Dereference of '*(&a)': " << *(&a) << endl;
     cout << "New value of 'a': " << a << "\n";
+    cout << "Null Pointer: " << ptr0 << "\n";
     return 0;
 }
 
@@ -27,6 +30,7 @@ PS C:\Users\Yash Khartode\Desktop\DSA C++> g++ 16_Pointers.cpp ; ./a.exe
 Pointer of Pointer: 0x61ff00 = 0x61ff00
 Dereference of '*(&a)': 10
 New value of 'a': 20
+Null Pointer: 0
 */
 
 /*
@@ -55,4 +59,9 @@ Dereference Operator: Gets the value of the variable pointed by any pointer.
 int a = 10;
 int *ptr = &a;                *(address) <- Here when star come on any address it become a value store at that address.
 '*ptr' will be equal to 10.   [_value__]
+
+Null Pointer: We assign NULL value to a pointer to show that it doesn't point to any location.
+    int *ptr = NULL; --> Show the output 0x0.
+- Dereferencing null ptr is not possible as it will result in error.
+- If we dereference the null ptr then next code after NULL ptr will not execute.
 */
