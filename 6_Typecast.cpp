@@ -22,7 +22,7 @@ Typecasting: Conversion of data from one type to another.
 
 1. Implicit Conversion: automatic conversion. Compiler do it automatically.
                         Convert small Datatype in Big so it is called as Type Promotion.
-                        Hierarchy: bool -> char -> int -> float -> double
+    Hierarchy: bool -> char -> int -> float -> double
 
 2. Explicit Conversion: Forced by programer to typecast by Compiler.
 */

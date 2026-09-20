@@ -64,4 +64,5 @@ Null Pointer: We assign NULL value to a pointer to show that it doesn't point to
     int *ptr = NULL; --> Show the output 0x0.
 - Dereferencing null ptr is not possible as it will result in error.
 - If we Dereference the 'null ptr' then next code after 'NULL ptr' will not execute because it will show error.
+
 */
