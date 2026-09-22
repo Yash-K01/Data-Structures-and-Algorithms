@@ -2,9 +2,10 @@
 using namespace std;
 
 int main(){
-    int marks[] = {1,20};
+    int marks[] = {1,20,300};
     cout << marks[0] << endl;
     cout << marks[1] << endl;
+    cout << marks[2] << endl;
 
     cout << "Length of array: " << sizeof(marks) / sizeof(int) << endl;
     return 0;
@@ -15,7 +16,8 @@ OUTPUT:
 PS C:\Users\Yash Khartode\Desktop\DSA C++\1_Arrays> g++ 1_Intro_DataStructure.cpp ; ./a.exe
 1
 20
-Length of array: 2
+300
+Length of array: 3
 */
 
 /*
