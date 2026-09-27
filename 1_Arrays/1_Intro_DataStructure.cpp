@@ -2,6 +2,7 @@
 using namespace std;
 
 int main(){
+    // Array
     int marks[] = {1,20,300};
     cout << marks[0] << endl;
     cout << marks[1] << endl;
