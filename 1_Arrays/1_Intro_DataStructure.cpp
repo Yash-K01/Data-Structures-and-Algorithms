@@ -3,10 +3,11 @@ using namespace std;
 
 int main(){
     // Array
-    int marks[] = {1,20,300};
+    int marks[] = {1,20,300,4000};
     cout << marks[0] << endl;
     cout << marks[1] << endl;
     cout << marks[2] << endl;
+    cout << marks[3] << endl;
 
     cout << "Length of array: " << sizeof(marks) / sizeof(int) << endl;
     return 0;
@@ -18,6 +19,7 @@ PS C:\Users\Yash Khartode\Desktop\DSA C++\1_Arrays> g++ 1_Intro_DataStructure.cp
 1
 20
 300
+4000
 Length of array: 3
 */
 
