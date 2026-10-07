@@ -14,6 +14,7 @@ int main(){
     int arr[] = {2, 4, 6, 8, 10, 12, 14, 16};
     int n = sizeof(arr) / sizeof(int);
     cout << linearSearch(arr, n , 10) << endl;
+    cout << linearSearch(arr, n , 16) << endl;
     return 0;
 }
 
@@ -21,6 +22,7 @@ int main(){
 OUTPUT:
 PS C:\Users\Yash Khartode\Desktop\DSA C++\1_array> g++ 5_linear_search.cpp ; ./a.exe      
 4
+7
 */
 
 /*
